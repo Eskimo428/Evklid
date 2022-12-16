@@ -1,0 +1,566 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+        url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff');
+}
+
+:root {
+    --bg-color-orange: #FF9900;
+    --bg-color-light-orange: #FFB84D;
+    --bg-color-dark-orange: #E1670E;
+    --bg-color-light-green: #97EE3F;
+    --color-white: #ffffff;
+    --color-light-grey: #CACACA;
+    --color-medium-grey: rgba(0, 0, 0, 0.5);
+    --color-grey: #666666;
+    --color-dark-grey: #414141;
+    --color-black: #000000;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active,
+a:focus,
+.btn:active,
+.btn:focus {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1770px;
+    margin-right: 75px;
+    margin-left: 75px;
+}
+
+.flex {
+    display: flex;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.btn {
+    background-color: var(--bg-color-orange);
+    border-radius: 15px;
+    color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.heading-h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--color-black);
+}
+
+.description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-black);
+}
+
+/*Header*/
+
+.header {
+    width: 1920px;
+    box-shadow: 0px 5px 40px 0px #0000001A;
+    border-radius: 0px 0px 32px 32px;
+
+}
+
+.logo {
+    margin-top: 14px;
+    margin-left: 75px;
+    margin-right: 554px;
+    width: 225px;
+}
+
+.nav {
+    margin-top: 39px;
+    margin-bottom: 39px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--bg-color-orange);
+}
+
+.nav-link:focus {
+    border: 2px solid var(--bg-color-orange);
+}
+
+
+.nav-link:active {
+    color: var(--bg-color-dark-orange);
+    border-bottom: 2px solid var(--bg-color-dark-orange);
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 85px;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--color-black)
+}
+
+.search {
+    margin-left: 260px;
+    margin-right: 40px;
+}
+
+.search:hover path {
+    stroke: var(--bg-color-orange);
+}
+
+.search:hover {
+    stroke: var(--bg-color-orange);
+    stroke-width: 2px;
+}
+
+.serch:focus path {
+    stroke: var(--bg-color-dark-orange);
+}
+
+/*Section Hero*/
+
+.section-hero {
+    min-height: 620px;
+    margin-top: 50px;
+    background: url(../img/balconies.jpg) no-repeat;
+    background-size: contain;
+    border-radius: 32px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+    color: var(--color-white);
+    padding: 100px 853px 24px 80px;
+    margin: 0 0 0 0;
+}
+
+.section-hero__subtitle {
+    padding: 0px 900px 90px 80px;
+    margin: 0 0 25px 0;
+    color: var(--color-white);
+}
+
+.section-hero__btn {
+    padding: 25px 39px 25px 39px;
+    font-size: 23px;
+    line-height: 28px;
+    margin: 0 1410px 100px 80px;
+}
+
+.section-hero__btn:hover {
+    background-color: var(--bg-color-light-orange);
+}
+
+.section-hero__btn:focus {
+    background-color: var(--bg-color-light-orange);
+}
+
+.section-hero__btn:active {
+    background-color: var(--bg-color-dark-orange);
+}
+
+
+
+/*Section About*/
+
+.about {
+    margin-top: 50px;
+}
+
+.section-about__heading {
+    margin: 0 0 0 0;
+}
+
+.section-about__description {
+    padding: 20px 535px 50px 0px;
+    margin: 0;
+}
+
+.section-about__content {
+    min-height: 550px;
+}
+
+.section-about__left {
+    background: url(../img/man.jpg) no-repeat;
+    min-width: 868px;
+    background-size: contain;
+    margin-right: 32px;
+    border-radius: 32px;
+}
+
+.section-about__background {
+    margin-top: 426px;
+    background-color: var(--color-medium-grey);
+    border-radius: 32px;
+
+}
+
+.section-about__heading-h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-white);
+    margin: 0 0 0 0;
+    padding: 50px 60px 50px 50px;
+}
+
+.section-about-btn {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 3px solid var(--bg-color-orange);
+    margin: 68px 50px 70px 50px;
+    padding: 18px 35px 16px 35px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+.section-about-btn:hover {
+    background-color: var(--bg-color-orange);
+}
+
+.section-about-btn:focus {
+    background-color: var(--bg-color-orange);
+}
+
+.section-about-btn:active {
+    background-color: var(--bg-color-dark-orange);
+}
+
+.section-about__item {
+    border: 1px solid var(--color-light-grey);
+    border-radius: 32px;
+}
+
+.section-about__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.section-about__icon {
+    margin: 65px 50px 65px 60px;
+}
+
+.section-about__subtitle {
+    min-width: 452px;
+    margin-bottom: 0px;
+
+}
+
+.section-about__text {
+    margin: 37px 118px 0px 0px;
+
+}
+
+
+.section-about__subtitle-descr {
+    width: 450px;
+    margin-top: 10px;
+}
+
+/*Section Working*/
+
+.working {
+    margin-top: 95px;
+}
+
+.section-working__heading{
+    margin-top: 0px;
+}
+
+.section-working__list_content {
+    margin-top: 48px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.section-working-item:not(:last-child) {
+    margin-right: 86px;
+}
+
+.section-working-item:hover {
+    color: var(--bg-color-orange);
+    cursor: pointer;
+}
+
+.section-working__subtitle {
+    margin-top: 45px;
+    margin-bottom: 0px;
+    line-height: 32px;
+}
+
+.section-working__description {
+    margin-top: 8px;
+    margin-bottom: 36px;
+    width: 758px;
+}
+
+.section-working__btn {
+    padding: 20px 35px 20px 40px;
+}
+
+.section-working__btn:not(:last-child) {
+    margin-right: 32px;
+}
+
+.section-working__btn:hover {
+    background-color: var(--bg-color-light-orange);
+}
+
+.section-working__btn:focus {
+    background-color: var(--bg-color-light-orange);
+}
+
+.section-working__btn:active {
+    background-color: var(--bg-color-dark-orange);
+}
+
+.section-working__btn-white {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-black);
+}
+
+.section-working__btn-white:hover {
+    background-color: var(--color-grey);
+    color: var(--color-white);
+    border-color: var(--color-grey);
+}
+
+.section-working__btn-white:focus {
+    background-color: var(--color-grey);
+    color: var(--color-white);
+    border-color: var(--color-grey);
+}
+
+.section-working__btn-white:active {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.section-working__right {
+    width: 870px;
+    min-height: 460px;
+    background: url(../img/working-laptop.jpg) no-repeat;
+    background-size: contain;
+    margin-left: 142px;
+    margin-top: 53px;
+}
+
+/*FAQ*/
+
+.faq {
+    margin-top: 111px;
+}
+
+.section-faq__item {
+    line-height: 33px;
+    border-top: 1px solid var(--color-light-grey);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+
+}
+
+.section-faq__item:last-child {
+    border-bottom: 1px solid var(--color-light-grey);
+}
+
+/*footer*/
+
+.footer {
+    margin-top: 90px;
+    background-color: var(--color-black);
+    justify-content: space-around;
+
+}
+
+.footer-left {
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+
+.footer-logo {
+    margin-bottom: 18px;
+}
+
+.footer-nav {
+    margin-bottom: 90px;
+}
+
+.footer-nav__item {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    color: var(--color-light-grey);
+}
+
+.footer-nav__link {
+    color: var(--color-light-grey);
+}
+
+.footer-nav__link:hover {
+    color: var(--bg-color-orange);
+}
+
+.footer-nav__link:focus {
+    color: var(--color-light-grey);
+    border: 2px solid var(--bg-color-orange);
+}
+
+.footer-nav__link:active {
+    color: var(--bg-color-dark-orange);
+}
+
+.footer-social__icon {
+    margin: 0 25px 50px 0;
+}
+
+.footer-social__icon:hover path{
+    fill: var(--bg-color-orange);
+    stroke: var(--bg-color-orange);
+}
+
+
+.footer-center {
+    margin-left: 300px;
+}
+
+.footer-header {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--color-light-grey);
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.form {
+    color: var(--color-light-grey);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    height: 60px;
+    margin-bottom: 25px;
+    padding: 14px 10px 14px 24px;
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--color-white);
+    background-color: var(--color-dark-grey);
+
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    height: 150px;
+    margin-bottom: 32px;
+    padding: 20px 10px 14px 24px;
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 16px;
+    color: var(--color-white);
+    background-color: var(--color-dark-grey);
+    resize: none;
+}
+
+
+.btn-submit {
+    margin-right: 22px;
+    padding: 19px 52px 19px 52px;
+    border: 1px solid var(--bg-color-dark-orange);
+}
+
+
+.footer-right {
+    margin-top: 126px;
+    margin-left: 236px;
+}
+
+.footer__description {
+    width: 363px;
+    color: var(--color-light-grey);
+}
