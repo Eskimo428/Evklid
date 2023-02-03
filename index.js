@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: false,
+    loop: true,
 
     // If we need pagination
     pagination: {
@@ -21,9 +21,9 @@ window.addEventListener('DOMContentLoaded', function () {
       onlyInViewport: true,
     },
 
-    mousewheel: {
-      sensitivity: 1,
-    },
+    // mousewheel: {
+    //   sensitivity: 1,
+    // },
 
     autoplay: {
       delay: 2500,
@@ -80,11 +80,33 @@ window.addEventListener('DOMContentLoaded', function () {
   })
 
 
+
+
   $('.section-faq__item').click(function () {
+    $(this).toggleClass('ui-state-active').next().slideToggle()
+    cure
+    $('.section-faq__plus').not(this).removeClass('section-faq__plus-active').next().slideUp()
+  })
+  $('.section-faq__plus').click(function () {
     $(this).toggleClass('section-faq__plus-active').next().slideToggle()
     cure
     $('.section-faq__item').not(this).removeClass('section-faq__plus-active').next().slideUp()
-    })
+  })
+
+
+  $('.section-faq__item').toggleClass(function () {
+    if ($(this).parent().is('.ui-state-active')) {
+      addClass ('.section-faq__plus-active')
+    }
+
+  })
+
+  document.querySelector('#burger').addEventListener('click', function(){
+    document.querySelector('#menu').classList.toggle('is-active')
+  })
+  document.querySelector('.krest').addEventListener('click', function(){
+    document.querySelector('#menu').classList.toggle('is-active')
+  })
 
 })
 
